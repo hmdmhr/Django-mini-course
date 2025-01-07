@@ -2,6 +2,12 @@
 
 
 {% block content %}
-    <h1>Hello, world. You're at the message index..dff.</h1>
+
+    <div class="list-group">
+        {% for message in message_list %}
+
+            <a href="#" class="list-group-item list-group-item-action">{{ message.text }}</a>
+        {% endfor %}
+      </div>
 {% endblock content %}
 
